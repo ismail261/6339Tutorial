@@ -1,0 +1,10 @@
+if(toNumber(substring(value,indexOf(value," "),indexOf(value,":"))+substring(value,indexOf(value,":")+1,indexOf(value,":")+3)) > 500,
+if(toNumber(substring(value,indexOf(value," "),indexOf(value,":"))+substring(value,indexOf(value,":")+1,indexOf(value,":")+3)) < 1200,
+if(substring(value,indexOf(value,"-") - 3,indexOf(value,"-")) == "AM",
+"Morning",if(toNumber(substring(value,indexOf(value," "),indexOf(value,":"))+substring(value,indexOf(value,":")+1,indexOf(value,":")+3)) < 900,
+"Evening","Night")),if(substring(value,indexOf(value,"-") - 3,indexOf(value,"-")) == "AM","Night","Afternoon")),
+if(toNumber(substring(value,indexOf(value," "),indexOf(value,":"))+substring(value,indexOf(value,":")+1,indexOf(value,":")+3)) < 500,
+if(toNumber(substring(value,indexOf(value," "),indexOf(value,":"))+substring(value,indexOf(value,":")+1,indexOf(value,":")+3)) < 400,
+if(substring(value,indexOf(value,"-") - 3,indexOf(value,"-")) == "AM","Night","Afternoon"),
+if(substring(value,indexOf(value,"-") - 3,indexOf(value,"-")) == "AM","Morning","Afternoon")),
+if(substring(value,indexOf(value,"-") - 3,indexOf(value,"-")) == "AM","Morning","Evening")))
